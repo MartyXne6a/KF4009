@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset="UTF-8">
+	
+	<meta name="viewport" content="width=device-width"><!--tell mobile browsers to make the size of the layout viewport equal to the device width or the size of the screen-->
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0">
+	<!--to fix this modify the meta element that you just added so that it is as follows-->
+	
+  	<title>The North East Event - upcoming shows, exhibits and other events. </title> 
+	
+    <link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head> 
+<body> 
+<div id="gridContainer">
+<!--Navigation bar-->
+<nav id="mainNav">
+	<ul> 
+		<li><a class="current" href="index.html">Home</a></li> 
+		<li><a href="viewEvents.php">View Events</a></li> 
+		<li><a href="admin.php">Admin</a></li> 
+		<li><a href="credits.html">Credits</a></li> 
+		<li><a href="#">Wireframes</a></li> 
+	</ul> 
+</nav>
+
+<header>
+		<a href="index.html"><img src="Immagini/title.png" alt="NorthEastEvents" ></a>
+</header>
+<!--main contents-->	
+<main id="mainGrid">
+	
+	<article class="article1">
+		<a href="christmas.html">
+			<video loop autoplay muted ><source src="video/video2.mp4" type="video/mp4"></video></a>
+		<h2>Don't miss the joy of Christmas</h2>
+			<p>Our Christmas Events are coming soon...<br>
+			<a href="christmas.html">All you need to do is to find out the programme.</a></p>
+	</article>
+	
+	<article class="article2">
+		<a href="newYearEve.html"><img src="Immagini/pexels.jpg" alt="secondPriority">
+		<h2>The Best way to have a wonderful Year...</h2>
+			<h3>is to take part at one of the North East New Year's Eve Events</h3></a>
+	</article>
+	
+	<article class="article3">
+		<a href="circus.html"><img src="Immagini/circus.jpg" alt="circusNCL"></a>
+		<h3>Never seen before...</h3>
+		<a href="circus.html"><p> The Greates Circus in Europe is coming in Newcastle Upon Tyne.</p></a>
+	</article>
+	
+	<article class="article4">
+		<a href="ballet.html"><img src="Immagini/ballerina.jpg" alt="ballet"></a>
+		<h3>Only for a moment...</h3>
+		<a href="circus.html"><p>Swan Lake will be sculpt in Durham</p></a>
+	</article>
+	
+	<article class="article5">
+		<a href="jazzNight.html"><img src="Immagini/band.jpg" alt="jazz"></a>
+		<h3>To the wise...</h3>
+		<a href="circus.html"><p>Jazz Night is coming to provide you a wonderful melody</p></a>
+	</article>
+	
+</main>	
+	
+<!--sidebar-->
+	<aside class="asideContainer">
+		
+		<section id="remaindNews">
+			 <a href="#newsletter"><img src="Immagini/newsletter.jpg" alt="newsletter"> </a>
+			 <h3>Don't miss any event!!!</h3>
+			 <p>Just a <a href="#newsletter">click</a> to keep updated about all North East Events</p>
+		</section>
+		
+		<section id="firstPriority">
+			<a href="christmas.html"> <img src="Immagini/christmas-scrabbles.jpg" alt="firstPriority"></a>
+			<h3>The Christmas longest ever...</h3>
+			 <p>Start from the 1st December!!!</p>
+		</section>
+		
+		<section id="secondPriority">
+			<a href="newYearEve.html"> <img src="Immagini/close-up.jpg" alt="secondPriority"></a>
+			 <h3>Happy New Year 2020!!!</h3>
+			 <p>This Year we will organize the New Year's Eve for you</p>
+		</section>
+		
+		<section id="thirdPriority">
+			<a href="rockFestival.html"> <img src="Immagini/guitarist.jpg" alt="thirdPriority"></a>
+			 <h3>Rock Festival</h3>
+			 <p>Ready to Rock? Get the ticket for the Rock's Weekend</p>
+		</section>
+		
+		
+	</aside>
+<footer>
+	
+<!--Footer:start flex parent container consists by Contact Us form, quick search and sign up for the Newsletter-->
+<div class="flexFooter">
+	
+<!--search bar-->	
+<section id="search">
+	 <h3>Quick Event Search</h3>
+    <form action="/action_page.php">
+      <input type="text" placeholder="Key Event" name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+	
+</section>
+<!--Company's contacts for any inquirie-->	
+<section id="contactUs">
+	<h3>Contact Us</h3><p>Need a help?<br>Call us:<br>+44 0191 9839287<br> OR<br>Text us your inquiries</p>
+    <form action="#" method="post">
+      <input type="text" name="email" placeholder="Email" />
+      <textarea name="message" placeholder="Message"></textarea>
+      <button>Send</button>
+    </form>
+	
+</section>
+<section id="newsletter">
+<!--Newsletter-->
+<h3>Stay in touch</h3>
+<p>Subscribe to our newsletter to keep you updated</p>
+	<form action="#" method="post">
+	<input type="text" placeholder="Enter your email address" name="search">
+	<button>Subscribe</button><br>
+	</form>
+<!--socials links-->
+<div id="social">
+	<h3>Connect with us</h3>
+	<a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+	<a href="#" class="fa fa-instagram"></a>
+</div>
+
+</section>
+</div>
+	<!-- end flex container-->
+	<!--Navigation link footer-->
+	<section id="navFooter">
+     <ul> 
+		<li><a href="index.html">Home</a></li> 
+		<li><a href="viewEvents.php">View Events</a></li> 
+		<li><a href="admin.php">Admin</a></li> 
+		<li><a href="credits.html">Credits</a></li> 
+		<li><a href="#">Wireframes</a></li>  
+	</ul> 
+</section>
+<!--Copyright, Privacy Policy, Terms and Conditions, Site Map-->
+	
+<div class="copyR">
+	<p>North East Events&copy; 2019</p>
+	<nav>
+		<ul>
+			<li><a href="#">Site Map</a></li>
+			<li><a href="#">Privacy Policy</a></li>
+			<li><a href="#">Terms and Conditions</a></li>
+		</ul>
+	</nav>
+</div>
+
+</footer>
+</div>  
+</body>
+</html>

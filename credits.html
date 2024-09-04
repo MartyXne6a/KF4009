@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset="UTF-8">
+	
+	<meta name="viewport" content="width=device-width"><!--tell mobile browsers to make the size of the layout viewport equal to the device width or the size of the screen-->
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0">
+	<!--to fix this modify the meta element that you just added so that it is as follows-->
+	
+  	<title>The North East Event - Student Details, Security Consideration and References </title> 
+	
+    <link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<?php
+	// including connection to the server
+	include "database_conn.php";
+	?>
+	
+</head> 
+<body> 
+<div id="gridContainer">
+<!--Navigation bar-->
+<nav id="mainNav">
+	<ul> 
+		<li><a href="index.html">Home</a></li> 
+		<li><a href="viewEvents.php">View Events</a></li> 
+		<li><a href="admin.php">Admin</a></li> 
+		<li><a class="current" href="credits.html">Credits</a></li> 
+		<li><a href="#">Wireframes</a></li> 
+	</ul> 
+</nav>
+
+<header>
+		<a href="index.html"><img src="Immagini/title.png" alt="NorthEastEvents" ></a>
+</header>
+<!--main contents-->	
+<main id="credits">
+	<h2>Student Details</h2>
+	<div class="studentDetails">
+		<label>Full Name:</label><p>Martina Pani</p>
+		<label>Student ID Number:</label><p>w19020174</p>
+		<label>Email address:</label><p>w19020174@northumbria.ac.uk</p>
+	</div>
+	<h2>Security Consideration</h2>
+	<div class="security">
+		<p>It is necessary to know which are the vulnerabilities to which a web server, application sever, and web application are exposed in order to minimise any potential security risks with an aware and structured approach suited to the destination environment.</p>
+
+			<p>There are several reasons for which the malicious might be interested to attack the North East Events web site, and not necessarily the unique purpose is to obtain information or alter them to compromise the web site of interest. In fact, it might be only a means to obtain sensitive information about users that then might be used for further attacks, such us a fraud attempted.
+			Without a broader view and full knowledges about Cyber Security, we would be led to think that the North East Events web site is not subject to attacks same as one referred above, not having any payments procedure planned, and consequently be concerned to design a security system contextualising only on what and how may be compromise our web site.</p>
+		
+			<p>This is a necessary premise before to discuss the techniques that should be adopted in order to guarantee the security for the company and the users.</p><br>
+		
+		    <p>Cyber Security is based on the three pillars confidentiality, Integrity, and Availability. Any choice will be taken to achieve each of those in order that the North East Events web site will suffer no impact.
+			Unfortunately, implementation of firewalls would leave the security vulnerable.<br>
+			Switching from HTTP to HTTPS is a paramount, using a good certificate authority (such as SSL or TLS), all data that transit through HTTPS is encrypted.
+			However, this might not be enough and we need to enforce the browser to reject HTTP requests.
+			To achieve this, the HTTP Strict-Transport-Security (HSTS) header must be included in the server responses, and every time that the client sends a HTTP request to the server, the browser redirects the encrypted version (HTTPS).
+			Another header that might be included is the HTTP Content-Security-Policy to control the sources that the client can require and how these should be required. 
+			If the HTTPS will be implemented to best can guarantee the origin, integrity and confidentiality of data.
+			</p>
+			<p>
+			It is our concern to prevent entering malicious information by attackers, or also putting errors inside a database.
+			As starting point, an authentication system should be included so as to grant a limited access to the administration area. 
+			Certainly needed is to store no plaintext passwords, but that might not be enough to protect the system and users. Some ex-post mitigations might be insert, such as the second authentication factor in addition to the ordinary credentials (username and password), or/and a maximum number of attempts before to block the account.<br>
+
+			Least Privilege is only one of the several paradigms to consider in relation of the database security; each user should have the right to access only to what need. Broader privileges might led access to confident information. 
+
+			Finally, but not least, each parameters inputted by form should be checked for their validity(such as type, lenght of field) and sanitised to prevent SQL injections. Note that also where the attribute “required” has been used the paramertes has been checked, because to alter the HTML code might be a simple means for malicious as attempt to attack. 
+			As well, a more accurate inserting and checking date format should be implemented to ensure a considerable date has been inserted.
+
+			</p>
+		    
+	</div>
+	<h2>References</h2>
+	<div class="references">
+		
+		<p>All Event's descriptions used in the Home Page have been created by the Student.</p>
+		
+		<h3>Images and Video</h3>
+		
+		<p>S. Hermann & F. Richter, created 15 January 2017, <span>unknown Title</span>, photograph, viewed 22 October 2017 
+		<a href="https://pixabay.com/photos/ballerina-ballroom-dancers-human-2878011/"><br>&#60;https://pixabay.com/photos/ballerina-ballroom-dancers-human-2878011/&#62;</a>.&#32;<a href="https://pixabay.com/service/license/"> Pixabay License</a></p>
+		
+		<p>S. Hermann & F. Richter, created 15 January 2017, <span>unknown Title</span>, photograph, viewed 23 October 2017 
+		<a href="https://pixabay.com/photos/ballerina-ballroom-dancers-human-2878354/"><br>&#60;https://pixabay.com/photos/ballerina-ballroom-dancers-human-2878354/&#62;</a>.&#32;<a href="https://pixabay.com/service/license/"> Pixabay License</a></p>
+		
+		<p>Maret Hosemann, unknown date, <span>unknown Title</span>, illustration, viewed 26 April 2016
+		<a href="https://pixabay.com/illustrations/newsletter-news-information-1349774/"><br>&#60;https://pixabay.com/illustrations/newsletter-news-information-1349774/&#62;</a>.&#32;<a href="https://pixabay.com/service/license/"> Pixabay License</a></p>
+		
+		
+		<p>Gerd Altmann, unknown date, <span>unknown Title</span>, photograph, viewed 6 February 2018 
+		<a href="https://pixabay.com/photos/dance-yoga-meditation-woman-3134828/">
+		<br>&#60;https://pixabay.com/photos/dance-yoga-meditation-woman-3134828/&#62;</a>.&#32;<a href="https://pixabay.com/service/license/"> Pixabay License</a></p>
+		
+		<p>Gerd Altmann, unknown date, <span>unknown Title</span>, illustration, viewed 4 March 2014  
+		<a href=" https://pixabay.com/en/music-piano-keys-keyboard-sound-279332/">
+		<br>&#60;https://pixabay.com/en/music-piano-keys-keyboard-sound-279332/&#62;</a>.&#32;<a href="https://pixabay.com/service/license/"> Pixabay License</a></p>
+		
+		<p>JL G, unknown date, <span>unknown Title</span>, illustration, viewed 7 July 2017  
+		<a href="https://pixabay.com/illustrations/mask-carnival-venice-art-abstract-2483080/">
+		<br>&#60;https://pixabay.com/illustrations/mask-carnival-venice-art-abstract-2483080/&#62;</a>.&#32;<a href="https://pixabay.com/service/license/"> Pixabay License</a></p>
+		
+		<p>© Fadhel, unknown date, <span>Colors</span>, illustration, unknown date,   
+		<a href="https://stock.adobe.com/uk/images/colors/330967750">
+		<br>&#60;https://stock.adobe.com/uk/images/colors/330967750&#62;</a>.&#32;<a href="HTTPS://STOCK.ADOBE.COM/UK/LICENSE-TERMS"> Standard License</a></p>
+		
+		<p>Cottonbro, taken 27 October 2019, <span>unknown Title</span> , photograph, viewed 3 November 2019,
+		<a href="https://www.pexels.com/it-it/foto/persone-barra-bar-bevande-3171736/">
+		<br>&#60;https://www.pexels.com/it-it/foto/persone-barra-bar-bevande-3171736/&#62;</a>.&#32;<a href="https://www.pexels.com/it-it/license/"> Pexels Licence</a></p>
+		
+		<p>Cottonbro, unknown date, <span>unknown Title</span> , video, viewed 6 November 2019, 
+		<a href="https://www.pexels.com/it-it/video/3189051/">
+		<br>&#60;https://www.pexels.com/it-it/video/3189051/&#62;</a>.&#32;<a href="https://www.pexels.com/it-it/license/"> Pexels Licence</a></p>
+		
+		<p>Ylanite Koppens, taken 10 December 2019,<span>Christmas Scrabbles Bokeh Photography</span> , photograph, viewed 10 December 2019 
+		<a href="https://www.pexels.com/photo/christmas-scrabbles-bokeh-photography-728458/">
+		<br>&#60;https://www.pexels.com/photo/christmas-scrabbles-bokeh-photography-728458/&#62;</a>.&#32;<a href="https://www.pexels.com/it-it/license/"> Pexels License</a></p>
+		
+		<p>VisionPic .net, taken 1 October 2019, <span>unknown Title</span>, photograph, viewed 5 October 2019,
+		<a href="https://www.pexels.com/it-it/foto/luce-leggero-vacanza-romantico-3036525/">
+		<br>&#60;https://www.pexels.com/it-it/foto/luce-leggero-vacanza-romantico-3036525/&#62;</a>.&#32;<a href="https://www.pexels.com/it-it/license/"> Pexels License</a></p>
+		
+		<p>Pixabay, taken 13 August 2016, <span >Guitarist of Greyscale Photo</span> , photograph, viewed 23 October 2016,
+		<a href="https://www.pexels.com/it-it/foto/bianco-e-nero-chitarra-chitarrista-concerto-210922/">
+		<br>&#60;https://www.pexels.com/it-it/foto/bianco-e-nero-chitarra-chitarrista-concerto-210922/&#62;</a>.&#32;<a href="https://www.pexels.com/it-it/license/"> Pexels License</a></p>
+		
+		<p>Jonas Ferlin, unknown date, <span>People Walking By Th Beach</span> , photograph, viewed 24 April 2019,
+		<a href="https://www.pexels.com/photo/people-walking-by-th-beach-2224949/">
+		<br>&#60;https://www.pexels.com/photo/people-walking-by-th-beach-2224949/&#62;</a>.&#32;<a href="https://www.pexels.com/it-it/license/"> Pexels License</a></p>
+		
+		<p>Adrianna Calvo, taken 10 October 2014, <span>Grayscale Photography of Paintings</span> , photograph, viewed 10 December 2015,
+		<a href="https://www.pexels.com/photo/black-and-white-art-museum-europe-21264/">
+		<br>&#60;https://www.pexels.com/photo/black-and-white-art-museum-europe-21264/&#62;</a>.&#32;<a href="https://www.pexels.com/it-it/license/"> Pexels License</a></p>
+		 
+		<p>Gratisography, unknown date, <span>Smiling Person With Pink Lipstick and Red Nose Clown</span> , photograph, viewed 16 May 2015,
+		<a href="https://www.pexels.com/photo/man-person-red-white-476/">
+		<br>&#60;https://www.pexels.com/photo/man-person-red-white-476/&#62;</a>.&#32;<a href="https://www.pexels.com/it-it/license/"> Pexels License</a></p>
+		
+		<p>Becky Phan, unknown date, <span>Circus</span> , photograph, viewed 23 June 2015,
+		<a href="https://unsplash.com/photos/o8-670KHgK8">
+		<br>&#60;https://unsplash.com/photos/o8-670KHgK8&#62;</a>.&#32;<a href="https://unsplash.com/license"> Unsplash License</a></p>
+		
+		<p>Jens Thekkeveettil, unknown date, <span>Colorful jazz concert</span> , photograph, viewed 5 November 2014,
+		<a href="https://unsplash.com/photos/dBWvUqBoOU8">
+		<br>&#60;https://unsplash.com/photos/dBWvUqBoOU8&#62;</a>.&#32;<a href="https://unsplash.com/license"> Unsplash License</a></p>
+		
+		<p>Kyle Head, unknown date, <span>unknown Title</span> , photograph, viewed 18 August 2018,
+		<a href="https://unsplash.com/photos/p6rNTdAPbuk">
+		<br>&#60;https://unsplash.com/photos/p6rNTdAPbuk&#62;</a>.&#32;<a href="https://unsplash.com/license"> Unsplash License</a></p>
+		
+		<p>Maxime Bhm, unknown date, <span>unknown Title</span> , photograph, viewed 11 July 2016,
+		<a href="https://unsplash.com/photos/icyZmdkCGZ0">
+		<br>&#60;https://unsplash.com/photos/icyZmdkCGZ0&#62;</a>.&#32;<a href="https://unsplash.com/license"> Unsplash License</a></p>
+		
+		<h3>Material Consulted</h3>
+		
+		<p>D. Yadav, D. Gupta, D. Singh, D. Kumar and U. Sharma, "Vulnerabilities and Security of Web Applications," 2018 4th International Conference on Computing Communication and Automation (ICCCA), Greater Noida, India, 2018, pp. 1-5, doi: 10.1109/CCAA.2018.8777558.</p>
+		
+		<p>Abate, R. (2019). Cyber Security per applicazioni web. Bologna: Società Editrice Esculapio. Available at:<br> <a href="https://www.amazon.it/kindle-store-ebooks">&#60;https://www.amazon.it/kindle-store-ebooks&#62;</a>.  (Downloaded: 4 May 2020)</p>
+		
+		<p>THE ULTIMATE GUIDE: What is SSL, TLS and HTTPS?, digicert, no date,<br>
+        <a href="https://www.websecurity.digicert.com/en/uk/security-topics/what-is-ssl-tls-https">&#60;https://www.websecurity.digicert.com/en/uk/security-topics/what-is-ssl-tls-https&#62;</a></p>
+
+		<p>HTML.it. n.d. HTML.It | Guide, Download, Tutorial E News. [online] Available at:<br><a href="https://www.html.it">&#60;https://www.html.it&#62;</a></p>
+		
+		<p>W3schools.com. n.d. W3schools Online Web Tutorials. [online] Available at:<br><a href="https://www.w3schools.com">&#60;https://www.w3schools.com&#62;</a></p>
+		
+		<p>Html.form.guide. n.d. HTML.Form.Guide - Tutorials And Articles About Building Robust Online Forms. [online] Available at:<br><a href="https://html.form.guide">&#60;https://html.form.guide&#62;</a></p>
+		
+		<p>Sandhu, R. and Jajodia, S., 1993. DATA AND DATABASE SECURITY AND CONTROLS. In: Handbook of Information Security Management, 1st ed. Auerbach Publishers, pp. 481-499.</p>
+		
+		<p>Brooke, P., 2020. Information Security Issues - Part 1.</p>
+		<p>Brooke, P., 2020. Information Security Issues - Part 2.</p>
+		
+		<p>Hurrell, M., 2020. Security Part One – General Background Needed For Database Security.</p>
+		<p>Hurrell, M., 2020. Security Part Two – Database Security: Past, Present, Future.</p>
+		
+		<p>Pina, E., 2013. PROGETTAZIONE E SVILUPPO DEL BACK-END PER IL MODULO DI CORREZIONE AUTOMATICA DEL CORSO DI PROGRAMMAZIONE. Undergraduate. Università Di Bologna Campus Di Cesena Scuola di Scienze. [online] Available at:<br><a href="https://amslaurea.unibo.it/6651/4/pina_elvis_tesi.pdf">&#60;https://amslaurea.unibo.it/6651/4/pina_elvis_tesi.pdf&#62;</a></p>
+		
+		<p>Php.net. n.d. PHP: Is_Numeric - Manual. [online] Available at:<br><a href="https://www.php.net/manual/en/function.is-numeric.php">&#60;https://www.php.net/manual/en/function.is-numeric.php&#62;</a></p>
+		
+		<p>Libraryguides.vu.edu.au. n.d. Library Guides: Harvard Referencing: Home. [online] Available at:<br><a href="http://libraryguides.vu.edu.au/harvard ">&#60;http://libraryguides.vu.edu.au/harvard&#62;</a></p>
+		
+		<p>2020. Quick Guide To Referencing To Avoid Plagiarism. [online] Available at: <br><a href="https://cragside.northumbria.ac.uk/Everyone/skillsplus/database_uploads/87.pdf">&#60;https://cragside.northumbria.ac.uk/Everyone/skillsplus/database_uploads/87.pdf&#62;</a></p>
+		
+		
+	</div> 
+</main>	
+
+<footer>
+	<!--Navigation link footer-->
+	<section id="navFooter">
+     <ul> 
+		<li><a href="index.html">Home</a></li> 
+		<li><a href="viewEvents.php">View Events</a></li> 
+		<li><a href="admin.php">Admin</a></li> 
+		<li><a href="credits.html">Credits</a></li> 
+		<li><a href="#">Wireframes</a></li> 
+	</ul> 
+</section>
+<!--Copyright, Privacy Policy, Terms and Conditions, Site Map-->
+	
+<div class="copyR">
+	<p>North East Events&copy; 2019</p>
+	<nav>
+		<ul>
+			<li><a href="#">Site Map</a></li>
+			<li><a href="#">Privacy Policy</a></li>
+			<li><a href="#">Terms and Conditions</a></li>
+		</ul>
+	</nav>
+</div>
+
+</footer>
+</div>  
+</body>
+</html>
